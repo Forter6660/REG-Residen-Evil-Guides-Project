@@ -1,0 +1,113 @@
+body {
+    background-color: #0a0a0a;
+    margin: 0px;
+    padding-bottom: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, p, h3, h2, h4, li, a {
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+}
+#navig {
+    padding: 8px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 6vh;
+    background-color: #1a1a1a;
+    box-sizing: border-box;
+}
+.comments-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.comment {
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 2px solid darkred;
+    background-color: #111;
+}
+.comment h1 {
+    font-size: 18px;
+    margin: 0 0 4px 0;
+    color: red;
+}
+.comment h3 {
+    font-size: 12px;
+    color: #555;
+    margin: 0 0 10px 0;
+}
+.comment p {
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    white-space: pre-wrap;
+}
+#writer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 360px;
+    background-color: #1a1a1a;
+    border-top: 2px solid darkred;
+    border-right: 2px solid darkred;
+    border-radius: 0 12px 0 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+}
+#writer textarea {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    background-color: #111;
+    border: 1px solid darkred;
+    border-radius: 8px;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+#writer button {
+    align-self: flex-end;
+    padding: 6px 16px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+#writer button:hover {
+    background-color: darkred;
+    color: white;
+}
+button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+}
+#N-Log{
+    display: flex;
+    justify-content: center;
+}

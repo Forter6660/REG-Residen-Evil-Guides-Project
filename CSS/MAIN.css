@@ -1,0 +1,334 @@
+body{
+    background-color: #0a0a0a;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#search-btn {
+    border-width: 0px;
+    background-color: red;
+    font-family: "Bebas Neue", sans-serif;
+    width: 30%;
+    height: 100vh;
+    font-size: large;
+}
+.user {
+    width: 5%;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    color: black;
+    background-color: red;
+    border: none;
+    font-family:  "Bebas Neue", sans-serif;
+}
+h1, p, h3, h2, h4, li{
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+}
+#navig {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 6vh;
+    background-color: #1a1a1a;
+}
+#canva {
+    display: block;
+    max-width: 100%;
+}
+#navig > #logo {
+    display: flex;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: red;
+}
+#heartmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mainpart {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#buttons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-radius: 40px;
+    border-color: #111111;
+    overflow: hidden;
+}
+div#search  > #sbar{
+    font-size: 30px;
+    color: red;
+    background-color: #111111;
+    border-color: #111111;
+    font-family: "Bebas Neue", sans-serif;
+    width: 70%;
+    height: 100vh;
+}
+div#banner  > h1{
+    font-size: 80px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+div#banner  > h1 > span{
+    color: red;
+}
+button, #search-btn {
+    cursor: pointer;
+}
+button.parts {
+    width: 65vw;
+    height: 30vh;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+    border-radius: 12px;
+    border-color: darkred;
+    background-color: black;
+}
+button.parts {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.baricade {
+    height: 20%;
+    width: 63%;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+}
+.parts > .photo {
+    opacity: 0;
+    width: 50%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+button.parts:hover {
+    border: 10px solid red;
+}
+.parts:hover .txtlog{
+    transform: translateX(10px);
+}
+.parts:hover .photo{
+    opacity: 1;
+}
+.parts:hover .baricade{
+    opacity: 1;
+}
+#waytwo > .txtlog {
+    height: 140%;
+}
+#wayone > .photo , #waytwoRE > .photo{
+    width: 30%;
+}
+button.parts > .txtlog {
+    width: 80%;
+    height: 80%;
+    left: 0px;
+    transition-duration: 0.5s;
+    transform: translateX(100px);
+    z-index: 10;
+}
+#partners {
+    margin-top: 800px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+
+    #navig {
+        height: 7vh;
+    }
+
+    #search {
+        width: 65%;
+    }
+
+    div#search > #sbar {
+        font-size: 22px;
+    }
+
+    #user {
+        width: 4.5%;
+    }
+
+    div#banner > h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    button.parts {
+        width: 80vw;
+        height: 25vh;
+    }
+
+    #partners {
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #navig {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    #logo {
+        font-size: 22px;
+    }
+
+    #search {
+        width: 100%;
+        order: 3;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    div#search > #sbar {
+        font-size: 16px;
+        height: 100%;
+    }
+
+    #search-btn {
+        font-size: 14px;
+        height: 100%;
+    }
+
+    #user {
+        width: 36px;
+        height: 36px;
+    }
+
+    div#banner > h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    button.parts {
+        width: 90vw;
+        height: 22vh;
+    }
+
+    button.parts > .txtlog {
+        transform: translateX(40px);
+    }
+
+    #buttons {
+        gap: 20px;
+    }
+
+    #partners {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #navig {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    #search {
+        width: 100%;
+        order: 3;
+        height: 36px;
+        border-radius: 18px;
+    }
+
+    div#search > #sbar {
+        font-size: 14px;
+        height: 100%;
+    }
+
+    #search-btn {
+        font-size: 13px;
+        height: 100%;
+    }
+
+    #user {
+        width: 32px;
+        height: 32px;
+    }
+
+    div#banner > h1 {
+        font-size: 32px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    button.parts {
+        width: 95vw;
+        height: 18vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    button.parts > .txtlog {
+        width: 70%;
+        height: 50%;
+        transform: translateX(0px);
+    }
+
+    .parts > .photo {
+        width: 100%;
+        height: 50%;
+    }
+
+    .parts:hover .txtlog {
+        transform: translateX(0px);
+    }
+
+    #waytwo > .txtlog {
+        height: 60%;
+    }
+
+    #wayone > .photo,
+    #waytwoRE > .photo {
+        width: 60%;
+    }
+
+    #buttons {
+        gap: 14px;
+        width: 100%;
+    }
+
+    #partners {
+        margin-top: 80px;
+    }
+
+    #canva {
+        width: 100%;
+        height: auto;
+    }
+}

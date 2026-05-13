@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+</head>
+    <style>
+    body{
+    background-color: #0a0a0a;
+    margin: 0px;
+    }
+    h1, p, h3, h2, h4, li{
+        color: red;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+
+    }
+    #holder{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    } 
+    form {
+        display: flex;
+        width: 300px;
+        flex-wrap: nowrap;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    </style>
+<body>
+    <h1 id="logo">REG</h1>
+    <h3>Registration</h3>
+    <div id="holder">
+        <form action="http://localhost/Projective/PHP/Register.php" method="POST" id="Log">
+            <input type="text" name="name" placeholder="Username" class="typed">
+            <input type="password" name="password" placeholder="Password" class="typed">
+            <select name="fav-resident" id="">
+                <option value="re1">resident evil 1 og</option>
+                <option value="re2">resident evil 2 og</option>
+                <option value="re3">resident evil 3 og</option>
+                <option value="re1rm">resident evil 1 remake</option>
+                <option value="re2rm">resident evil 2 remake</option>
+            </select>
+            <select name="region" id="">
+                <option value="USA">United States of America</option>
+                <option value="Pln">Poland</option>
+                <option value="Eng">Great Britain</option>
+                <option value="Kaz">Kazachstan</option>
+                <option value="Tur">Turkey</option>
+            </select>
+            <input type="submit" value="Register">
+        </form>
+        <form action="http://localhost/Projective/AUTEN/login.html">
+                <input type="submit" value="Already Logged In?">
+        </form>    
+    </div>
+</body>
+</html>
