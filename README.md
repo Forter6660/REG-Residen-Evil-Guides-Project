@@ -16,3 +16,7 @@ CREATE TABLE comments (
     comment TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+
+And second of all, from all maps and guides, for now, only resident evil 2 remake works others are in progress, so If you want to check out the work of the map, please click on the resident evil 2 reamke button, its the last one of all, in the main.php.
